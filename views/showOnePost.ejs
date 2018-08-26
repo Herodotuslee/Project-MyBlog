@@ -1,0 +1,19 @@
+<% include ./partials/header %>
+    <section>
+      <h1>Show one post</h1>
+      <p><%=post.title%></p>
+      <p><%=post.content%></p>
+      <a class='btn' href="/blog/show/edit/<%=post.id%>">Edit</a>
+      <a class='btn btn-delete' href="/blog/delete/<%=post.id%>">Delete</a>
+      <a class='btn' href="/blog/">Back</a>
+    </section>
+
+    <section>
+      <div class="">
+        <h3>Comments:</h3>
+        <p><%=post.comment%></p>
+        <p><%=post.comment%></p>
+
+      </div>
+    </section>
+<% include ./partials/footer %>

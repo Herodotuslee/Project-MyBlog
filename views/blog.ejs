@@ -1,0 +1,16 @@
+<% include ./partials/header %>
+    <section>
+      <h1><%=message%></h1>
+      <a class="btn btn-post"href="/blog/post">Post</a>
+      <%posts.forEach((post)=>{ %>
+        <article class="post-box">
+          <p><%=post.title%></p>
+          <p><%=post.img_url%></p>
+          <p><%=post.content%></p>
+          <a class='btn' href="/blog/show/<%=post.id%>">Info</a>
+          <a class='btn btn-delete' href="/blog/delete/<%=post.id%>">Delete</a>
+        </article>
+        <hr>
+      <% }) %>
+    </section>
+<% include ./partials/footer %>

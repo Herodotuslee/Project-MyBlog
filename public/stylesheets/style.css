@@ -1,0 +1,108 @@
+
+*{
+  padding:0px;
+  margin: 0px;
+
+
+}
+body,html{
+  background-color:#fff;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+
+/* NAVBAR */
+
+nav{
+  background: #333;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a{
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display:block;
+  padding: 1vw;
+}
+
+nav a:hover{
+  background-color: #555;
+}
+
+
+
+@media screen and (min-width: 760px){
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  flex: 1 1 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.social{
+  margin: 0;
+}
+
+}
+
+form{
+  text-align: center;
+}
+
+input{
+  margin-bottom: 1vh;
+  min-width: 20em;
+
+}
+
+.btn{
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 0.5em 1.3em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1em;
+  border-radius: 1.0em;
+  margin-top:0.5em;
+  margin-button:0.5em;
+
+}
+
+.btn-post{
+
+  margin:1em 30vw 1em 30vw;
+}
+
+.btn-delete{
+  margin:1em;
+  background-color:#f44336;
+  /* margin:1em 30vw 1em 30vw; */
+}
+
+.login-box{
+  margin:2em;
+  text-align: center;
+}
+
+.post-box{
+  margin:3em;
+}

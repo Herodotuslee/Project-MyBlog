@@ -1,0 +1,13 @@
+<% include ./partials/header %>
+    <h1>Edit Page</h1>
+    <form class="" action="/blog/show/edit/<%=post.id%>" method="post">
+      <input type="text" name="title" value=<%=post.title%>><br>
+      <textarea name="content" rows="30" cols="50"><%=post.content%>
+      </textarea><br>
+      <button type="submit" name="button">Submit</button>
+    </form>
+    <a class='btn' href="/blog/show/<%=post.id%>">Back</a>
+    <a class='btn btn-delete' href="/blog/delete/<%=post.id%>">Delete</a>
+  </body>
+</html>
+<% include ./partials/footer %>
